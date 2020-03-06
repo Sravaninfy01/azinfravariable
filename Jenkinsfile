@@ -8,7 +8,7 @@ pipeline {
                println{"myenv"}
             sh "terraform init"
             sh """
-            echo "${env.ENV}"
+            echo "Hello testing"
             """
             }
          }
