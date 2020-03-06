@@ -1,4 +1,4 @@
-#!/usr/bin/evn groovy
+//#!/usr/bin/evn groovy
 //agent any
  //{
   //string environment = env.EVN
