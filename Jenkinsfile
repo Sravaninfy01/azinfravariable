@@ -8,7 +8,7 @@ pipeline {
       stage('Terraform init') {
          steps {
             //sh "terraform init"
-            println("printing env"+evnironment);
+            println("printing env");
          }
       }
       stage('Terraform plan') {
