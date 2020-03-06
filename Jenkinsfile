@@ -11,7 +11,7 @@ pipeline {
      stage('Terraform init123') {
          steps {
             script {
-            String myenv= 'hello'
+            String myenv = 'hello'
                println{"myenv"}
             sh "terraform init"
             sh """
