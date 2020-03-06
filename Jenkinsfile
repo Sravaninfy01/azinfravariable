@@ -1,12 +1,14 @@
+#!/usr/bin/evn groovy
 pipeline {
    agent any
-    
+   {
+      String evnironment= env.ENV
 
    stages {
       stage('Terraform init') {
          steps {
-            //sh "terraform init"
-            echo "${env.ENV}"
+            \\sh "terraform init"
+            echo evnironment
          }
       }
       stage('Terraform plan') {
