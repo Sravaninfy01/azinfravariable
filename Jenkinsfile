@@ -7,13 +7,13 @@ pipeline {
    stages {
       stage('Terraform init') {
          steps {
-            \\sh "terraform init"
-            echo evnironment
+            //sh "terraform init"
+            println("printing env"+evnironment);
          }
       }
       stage('Terraform plan') {
          steps {
-            sh "terraform plan --var-file=/home/centos/azpoc/first/terraform.tfvars"
+            //sh "terraform plan --var-file=/home/centos/azpoc/first/terraform.tfvars"
             
          }
       }
