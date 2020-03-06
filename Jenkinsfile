@@ -8,7 +8,7 @@
 //  println("Println");
 //}
 
-#!/usr/bin/evn groovy
+//#!/usr/bin/evn groovy
 pipeline {
    agent any
    {
