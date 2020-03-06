@@ -1,8 +1,9 @@
 #!/usr/bin/evn groovy
 agent any
  {
-      String evnironment= env.ENV
+  string environment= env.EVN
+  //    String evnironment= env.ENV
 
-   println("Println");
+  println("Println");
 }
 
