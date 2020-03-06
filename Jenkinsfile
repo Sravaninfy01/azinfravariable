@@ -1,4 +1,8 @@
 pipeline {
+   environment
+   {
+      myenv = "hello"
+   }
    agent any
    stages {
      stage ('Checkoutscript')
@@ -11,7 +15,7 @@ pipeline {
      stage('Terraform init123') {
          steps {
             //script {
-            myenv = "hello"
+            
                //println{"myenv"}
            sh 'echo $myenv'
             sh 'terraform init'
