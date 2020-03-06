@@ -1,12 +1,16 @@
 pipeline {
    agent any
-    
-
    stages {
-      stage('Terraform init') {
+     stage('Terraform init') {
          steps {
+            script {
+            String myenv= 'hello'
+               println{"myenv"}
             sh "terraform init"
+            sh """
             echo "${env.ENV}"
+            """
+            }
          }
       }
       stage('Terraform plan') {
