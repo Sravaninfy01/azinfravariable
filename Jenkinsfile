@@ -1,7 +1,7 @@
 pipeline {
    agent any
    stages {
-     stage('Terraform init') {
+     stage('Terraform init123') {
          steps {
             script {
             String myenv= 'hello'
